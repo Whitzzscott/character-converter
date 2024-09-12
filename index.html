@@ -138,7 +138,7 @@
         const outputJson = {
             data: dataObject,
             scenario: scen,
-            modelInstruction: modelInstruction
+            Model_Instructions: modelInstruction
         };
     
         const inputData = parseInput(input);
@@ -169,6 +169,10 @@ name:["${inputData['PERSONA'] || name}"]`.trim();
     
         document.getElementById('outputJson').value = outputText;
     };
-</script>   
+</script>
+<script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
